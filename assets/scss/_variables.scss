@@ -1,0 +1,120 @@
+$white: #fff !default;
+$gray-100: #f5f5f5 !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$blue: #2699fb !default;
+$blue-dark: #0c283c;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #ed7e6b !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    'blue': $blue,
+    'indigo': $indigo,
+    'purple': $purple,
+    'pink': $pink,
+    'red': $red,
+    'orange': $orange,
+    'yellow': $yellow,
+    'green': $green,
+    'teal': $teal,
+    'cyan': $cyan,
+    'white': $white,
+    'gray': $gray-600,
+    'gray-dark': $gray-800,
+    'blue-dark': $blue-dark
+  ),
+  $colors
+);
+
+$primary: $blue !default;
+$primary-dark: $blue-dark;
+$secondary: $orange !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $white !default;
+$dark: $black !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    'primary': $primary,
+    'primary-dark': $primary-dark,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $black
+  ),
+  $theme-colors
+);
+
+$yiq-text-dark: $black !default;
+
+$body-bg: #e0e0e0;
+$body-color: $black;
+
+$grid-gutter-width: 0;
+
+$font-size-base: 25;
+$font-size-base-desktop: 16;
+
+$h1-font-size: $font-size-base * 4;
+$h1-font-size-desktop: 70;
+$h2-font-size: $font-size-base * 2.6;
+$h2-font-size-desktop: 60;
+$h3-font-size: $font-size-base * 2.6;
+$h3-font-size-desktop: 40;
+$h4-font-size: $font-size-base * 1.04;
+$h4-font-size-desktop: 14;
+$h5-font-size: $font-size-base * 1;
+$h5-font-size-desktop: 26;
+
+$font-weight-medium: 500 !default;
+
+$font-family-sans-serif: montserrat, sans-serif;
+$headings-font-family: niveau-grotesk, sans-serif;
+
+$transition-base: all 0.2s ease-in-out;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+  wide: 2500px
+) !default;
+
+$mobile-width: 1080;
+$desktop-width: 1280;
+
+$wrapper-width: 2500px;
+
+$btn-font-weight: $font-weight-medium;
+
+$popover-border-color: $white;
+$popover-body-color: $primary;

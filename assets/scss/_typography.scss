@@ -1,0 +1,88 @@
+body {
+  font-size: width-scalable($font-size-base);
+  @include emLh(44, $font-size-base);
+
+  @include media-breakpoint-up('lg') {
+    font-size: width-scalable($font-size-base-desktop, $desktop-width);
+    @include emLh(30, $font-size-base-desktop);
+  }
+}
+.font-weight-medium {
+  font-weight: 500;
+}
+
+h1,
+.h1 {
+  font-size: width-scalable($h1-font-size);
+  @include emLh(110, $h1-font-size);
+  margin-bottom: 68/ ($h1-font-size) * 1em;
+  @include media-breakpoint-up('lg') {
+    font-size: width-scalable($h1-font-size-desktop, $desktop-width);
+    @include emLh(76, $h1-font-size-desktop);
+  }
+}
+h2,
+.h2 {
+  font-size: width-scalable($h2-font-size);
+  @include emLh(76, $h2-font-size);
+  margin-bottom: 48/ ($h2-font-size) * 1em;
+  @include media-breakpoint-up('lg') {
+    font-size: width-scalable($h2-font-size-desktop, $desktop-width);
+    @include emLh(72, $h2-font-size-desktop);
+    &--line_small {
+      @include emLh(67, $h2-font-size-desktop);
+      margin-bottom: 67/ ($h2-font-size-desktop) * 1em;
+    }
+  }
+}
+h3,
+.h3 {
+  font-size: width-scalable($h3-font-size);
+  @include emLh(76, $h3-font-size);
+  margin-bottom: 48/ ($h3-font-size) * 1em;
+  @include media-breakpoint-up('lg') {
+    font-size: width-scalable($h3-font-size-desktop, $desktop-width);
+    @include emLh(48, $h3-font-size-desktop);
+  }
+}
+h4,
+.h4 {
+  font-size: width-scalable($h4-font-size);
+  @include emLh(38, $h4-font-size);
+  @include tracking(35);
+  text-transform: uppercase;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  @include media-breakpoint-up('lg') {
+    font-size: width-scalable($h4-font-size-desktop, $desktop-width);
+    @include emLh(22, $h4-font-size-desktop);
+  }
+}
+h5,
+.h5 {
+  font-size: width-scalable($h5-font-size);
+}
+
+p {
+  margin-bottom: 44/ ($font-size-base) * 1em;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.popover {
+  font-size: width-scalable($font-size-base);
+  @include emLh(44, $font-size-base);
+
+  @include media-breakpoint-up('lg') {
+    font-size: width-scalable($font-size-base-desktop, $desktop-width);
+    @include emLh(30, $font-size-base-desktop);
+    max-width: width-scalable(250, $desktop-width);
+  }
+
+  border-radius: 0;
+
+  &-body {
+    padding: 0.5em 1em;
+  }
+}

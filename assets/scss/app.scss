@@ -1,0 +1,49 @@
+@import '_variables';
+@import '_mixins';
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';
+@import '_typography';
+@import '_button';
+
+.page-wrapper {
+  max-width: $wrapper-width;
+  margin: 0 auto;
+  background: $white;
+  position: relative;
+}
+
+.section {
+  padding: width-scalable(104);
+  @include media-breakpoint-up('lg') {
+    padding: width-scalable(100, $desktop-width);
+  }
+
+  &--primary {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &--dark {
+    background-color: $primary-dark;
+    color: $white;
+  }
+
+  &--light {
+    background-color: $gray-100;
+  }
+}
+
+img,
+svg {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  transition: $transition-base;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}

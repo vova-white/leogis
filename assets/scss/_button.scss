@@ -1,0 +1,34 @@
+.btn {
+  padding: 1em 70/30 * 1em;
+  font-size: width-scalable(30);
+  line-height: 1em;
+  border-radius: 2em;
+  @include media-breakpoint-up('sm') {
+    font-size: 15px;
+  }
+
+  @include media-breakpoint-up('md') {
+    font-size: 12px;
+    padding: 16/12 * 1em 46/12 * 1em;
+  }
+
+  @include media-breakpoint-up('xl') {
+    font-size: width-scalable(12, $desktop-width);
+  }
+}
+
+//
+// Alternate buttons
+//
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
